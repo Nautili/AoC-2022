@@ -2,7 +2,7 @@ import sys
 
 def is_enclosed(pair):
     r1, r2 = pair
-    return (r1[0] <= r2[0] and r1[1] >= r2[1]) or(r1[0] >= r2[0] and r1[1] <= r2[1])
+    return (r1[0] <= r2[0] and r1[1] >= r2[1]) or (r1[0] >= r2[0] and r1[1] <= r2[1])
 
 def overlaps(pair):
     r1, r2 = pair
