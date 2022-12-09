@@ -1,5 +1,4 @@
 import sys
-from math import copysign
 
 def sign(x):
     if x > 0:
@@ -17,6 +16,7 @@ def count_tail_steps(steps, knots):
             # move head
             cur_pos[0] = (cur_pos[0][0] + dir[0], cur_pos[0][1] + dir[1])
 
+            # move tail
             for k, next_knot in enumerate(cur_pos[1:], start=1):   
                 last_pos = cur_pos[k - 1]
                 x_delta = last_pos[0] - next_knot[0]
