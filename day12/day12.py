@@ -11,7 +11,6 @@ def get_path_len(map, start, end=None):
     while to_visit:
         cur_node, path_len = to_visit.popleft()
         for dir in dirs:
-            visited.add(cur_node)
             next_node = tuple(i + j for i, j in  zip(dir, cur_node))
             cur_row, cur_col = cur_node
             next_row, next_col = next_node
